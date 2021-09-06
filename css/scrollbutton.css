@@ -1,0 +1,34 @@
+/* Scroll to top Styling */
+#scroll-top {
+    position: fixed;
+    top: -120%;
+    right: 2rem;
+    padding: .5rem 1.5rem;
+    font-size: 4rem;
+    background: var(--red);
+    color: #fff;
+    border-radius: .5rem;
+    transition: 1s linear;
+    z-index: 1000;
+}
+
+#scroll-top.active {
+    top: calc(100% - 12rem)
+}
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.loading-container.fade-out {
+    top: -120%;
+}
